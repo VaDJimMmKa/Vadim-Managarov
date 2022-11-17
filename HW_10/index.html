@@ -36,13 +36,13 @@
         scene.add(backLight);
 
         var mtlLoader = new THREE.MTLLoader();
-        mtlLoader.load('r2-d2.mtl', function (materials) {
+        mtlLoader.load('Pony_cartoon.mtl', function (materials) {
 
             materials.preload();
 
             var objLoader = new THREE.OBJLoader();
             objLoader.setMaterials(materials);
-            objLoader.load('r2-d2.obj', function (object) {
+            objLoader.load('Pony_cartoon.obj', function (object) {
 
                 scene.add(object);
                 object.position.y -= 60;
